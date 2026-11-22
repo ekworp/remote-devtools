@@ -43,6 +43,8 @@
         <section class="card mt-3 p-3 p-md-4 shadow-sm rounded-4">
           <h2 class="fs-5 mb-1" data-i18n="accessSection">Page access</h2>
           <p class="form-text mb-3" data-i18n="accessDescription">Limit connections to the origins listed below.</p>
+          <label class="form-check d-flex align-items-start gap-2 mb-1"><input id="allowDynamicJavaScript" class="form-check-input m-0" type="checkbox"> <span class="form-check-label" data-i18n="allowDynamicJavaScript">Allow dynamic JavaScript execution (high risk)</span></label>
+          <p class="form-text text-warning ms-4 mb-0" data-i18n="allowDynamicJavaScriptWarning">Remote commands can run page scripts when enabled. Cookie, storage, credential, and password access is blocked.</p>
           <label class="form-check d-flex align-items-center gap-2 mb-3"><input id="whitelistEnabled" class="form-check-input m-0" type="checkbox"> <span class="form-check-label" data-i18n="whitelistEnabled">Only connect on allowed origins</span></label>
           <label class="mb-3 d-block"><span class="form-label fw-semibold" data-i18n="whitelistOrigins">Allowed origins, one per line</span>
             <textarea id="whitelistOrigins" class="form-control" placeholder="https://example.com"></textarea>
@@ -64,8 +66,6 @@
               <option value="off" data-i18n="consoleOff">Disabled</option>
             </select>
           </label>
-          <label class="form-check d-flex align-items-start gap-2 mb-1"><input id="allowDynamicJavaScript" class="form-check-input m-0" type="checkbox"> <span class="form-check-label" data-i18n="allowDynamicJavaScript">Allow dynamic JavaScript execution (high risk)</span></label>
-          <p class="form-text text-warning ms-4 mb-0" data-i18n="allowDynamicJavaScriptWarning">Remote commands can run page scripts when enabled. Cookie, storage, credential, and password access is blocked.</p>
         </section>
         <div class="actions d-flex align-items-center gap-3 mt-4">
           <button class="btn btn-primary" type="submit" data-i18n="save">Save settings</button>
